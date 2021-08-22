@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Program to Display Name</title>
+</head>
+<body>
+First name:<br>
+<input type="text" name="firstname" id='firstname'>
+<br>
+Last name:<br>
+<input type="text" name="lastname" id='lastname'>
+<br>
+<input type="button" value="Send" onclick="myFunction()">
+<div id="here"></div> 
+</body>
+<script type="text/javascript">
+	myFunction = function() {
+    var first = document.getElementById("firstname").value;
+    var second = document.getElementById("lastname").value;
+
+    document.getElementById("here").innerHTML = first+" "+second;
+}
+
+</script>
+</html>
